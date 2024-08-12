@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react'
 
-import cubeRunLogo from '../../textures/cuberun-logo.png'
-
 import '../../styles/gameMenu.css'
 
 import { useStore } from '../../state/useStore'
@@ -49,7 +47,6 @@ const GameOverScreen = () => {
   return shown ? (
     <div className="game__container" style={{ opacity: shown ? 1 : 0, background: opaque ? '#141622FF' : '#141622CC' }}>
       <div className="game__menu">
-        <img className="game__logo-small" width="512px" src={cubeRunLogo} alt="Cuberun Logo" />
         <h1 className="game__score-gameover">GAME OVER</h1>
         <div className="game__scorecontainer">
           <div className="game__score-left">

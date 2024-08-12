@@ -56,7 +56,6 @@ const Overlay = () => {
   return shown ? (
     <div onClick={() => setHasInteracted()} className={`game__container`} style={{ opacity: shown ? 1 : 0, background: opaque ? '#141622FF' : '#141622CC' }}>
       <div className="game__menu">
-        <img className="game__logo" src="cuberun-logo.png" alt="Cuberun Logo" />
         <div className="game__subcontainer">
           {!hasLoaded ? (
             <Loader active={active} progress={progress} />
